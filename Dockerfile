@@ -3,7 +3,7 @@ FROM rockylinux:8
 # Install packages
 RUN dnf install -y httpd git && dnf clean all
 
-RUN git clone https://github.com/https://github.com/NimishRathi/docker-project-data.git
+RUN git clone https://github.com/NimishRathi/docker-project-data.git
 # Copy the zip file  container
 RUN cp -rvf docker-project-data/* /var/www/html/
 
